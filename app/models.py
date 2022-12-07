@@ -14,6 +14,7 @@ class Team(models.Model):
   def __str__(self):
     return self.name
 
+# apenas decorativo será de responsabilidade do microsserviço de consolidação
 class MyTeam(models.Model):
   players = models.ManyToManyField(Player)
 

@@ -20,9 +20,11 @@
 - Criar migrations a partir dos models: python manage.py makemigrations
 - Rodar migrações dos models: python manage.py migrate
 - Registrar models no admin: em app/admin.py adicionar admin.site.register(Player) e importação do Player
-- 
+- Signals e Receivers do Django: signals corresponde a events e receivers corresponde a listeners em outros frameworks
 
 ## Links dos repositórios da Imersão
 
 - https://github.com/rodolfoHOk/fullcycle.imersao11-consolidacao
 - https://github.com/rodolfoHOk/fullcycle.imersao11-django
+
+1:31:50
