@@ -2,10 +2,16 @@
 
 > Microsserviço Django
 
-## Tecnologias
+## Principais Tecnologias
 
 - Python
 - Django
+- SQLite
+
+### Bibliotecas adicionais
+
+- django-environ
+- dj-database-url
 
 ## Guia
 
@@ -27,7 +33,6 @@
   - dump módulo app: python manage.py dumpdata app (pegar tudo)
   - dump módulo auth: python manage.py dumpdata auth (pegar o último model)
 - Carregar dados iniciais: python manage.py loaddata initial_data
-
 
 ## Links dos repositórios da Imersão
 
