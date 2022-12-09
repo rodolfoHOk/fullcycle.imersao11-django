@@ -12,6 +12,8 @@
 
 - django-environ
 - dj-database-url
+- djangorestframework
+- django-cors-headers
 
 ## Guia
 
