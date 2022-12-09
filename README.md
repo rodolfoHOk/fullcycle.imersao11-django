@@ -7,6 +7,7 @@
 - Python
 - Django
 - SQLite
+- Kafka
 
 ### Bibliotecas adicionais
 
