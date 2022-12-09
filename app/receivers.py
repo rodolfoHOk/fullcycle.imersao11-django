@@ -25,11 +25,12 @@ def publish_team_created(sender, instance: Team, created: bool, **kwargs):
 @receiver(post_save, sender=MyTeam)
 def publish_my_team_players_updated(sender, instance: MyTeam, created: bool, **kwargs):
   print('My players updated')
+  my_team = MyTeam.objects.get(pk=instance.id)
   safe_publish_message(
     'chooseTeam',
     json.dumps({
-      'my_team_id': str(instance.uuid),
-      'players': [str(player.uuid) for player in instance.players.all()]
+      'my_team_id': str(my_team.uuid),
+      'players': [str(player.uuid) for player in my_team.players.all()]
     })
   )
 
